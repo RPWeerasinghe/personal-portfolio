@@ -26,6 +26,17 @@ function App(){
       <h2 style={{ color: '#333' }}>Featured Projects</h2>
       </div>
 
+      <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', maxWidth: '800px', margin: '20px auto' }}>
+        <div style={{ background: 'hsl(204, 100%, 80%)', padding: '20px', borderRadius: '8px', flex: 1, boxShadow: '0 2px 4px rgba(0,0,0,0.05)', border: '1px solid #ddd', textAlign: 'left' }}>
+          <h3 style={{ color: '#000000' }}>SPAREHUBLK</h3>
+          <p style={{ color: '#000000'}}>SPAREHUBLK is a web application developed for srilanka, which is an AI-Powered marketplace for buying and selling vehicle spare parts. </p>
+        </div>
+        <div style={{ background: '#ffb3b3', padding: '20px', borderRadius: '8px', flex: 1, boxShadow: '0 2px 4px rgba(0,0,0,0.05)', border: '1px solid #ddd', textAlign: 'left' }}>
+          <h3 style={{ color: '#000000' }}>Furniture Flow</h3>
+          <p style={{ color: '#000000' }}>A full-stack MERN web application for interactive room layout design. Place furniture on a 2D canvas and instantly preview the result in a photorealistic 3D scene</p>
+        </div>
+      </div>
+
       <button style={{backgroundColor: '#0070f3', color: '#fff' , border: 'none', padding: '10px 20px', borderRadius: '20px', cursor: 'pointer'}} onClick={()=>setShowContact(!showContact)}>Contact info</button>
       {showContact&&(
         <div style={{ marginTop: '20px', background: '#f9f9f9', padding: '15px', borderRadius: '8px', border: '1px dashed #0070f3' }}>
